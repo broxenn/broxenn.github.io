@@ -1,0 +1,61 @@
+body, #header, #footer, #main-copy, #side-bar {
+    background-color: #000000;
+    color: #0038f2;
+}
+
+ {
+    color: #0018f2;
+    text-decoration: underline;
+}
+
+#header .midHeader {
+    background-color: #000000;
+}
+
+.headerTitle, .headerTitle a {
+    color: #0018f2;
+}
+
+#headerSubTitle {
+    color: #0018f2;
+}
+
+.superHeader, .subHeader {
+    display: none;
+}
+
+#main-copy h1, #main-copy h2, #main-copy h3 {
+    color: #0018f2;
+    border-bottom: none;
+}
+
+#main-copy {
+    border-left: none;
+}
+
+#side-bar {
+    border: none;
+    padding: 10px;
+}
+
+#side-bar a {
+    color: #0018f2;
+}
+
+a:visited, a:link, a:hover, a:active {
+    color: #0018f2;
+}
+
+* {
+    color: #0018f2;
+}
+
+.thisPage {
+    color: #0018f2;
+}
+
+.thisPage, .thisPage a {
+    color: #0038f2 !important;
+    background-color: #000536 !important;
+}
+

@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <title>projects - concepts - zaryx - zaryx</title>
+
+    <link rel="stylesheet" href="../../../pub/style/style.css" type="text/css" media="screen, handheld" title="default">
+    <link rel="shortcut icon" href="https://holding-tape-descriptions-organizer.trycloudflare.com/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="../../../_werc/pub/style.css" type="text/css" media="screen" title="default">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+
+    <div class="left">
+      <a href="https://github.com/Ricardo55-guy">my github</a> |
+      <a href="https://www.tiktok.com/@broxen_brox">my tiktok</a>
+    </div>
+
+
+    
+
+</head>
+<body>
+
+<div id="header">
+    <div class="superHeader">
+<div class="left"><a href="https://www.tiktok.com/@broxen_brox">tiktok</a></div> 
+<div class="left"><a href="https://github.com/Ricardo55-guy">github</a></div>
+    </div>
+
+    <div class="midHeader">
+    <h1 class="headerTitle"><a href="../../../index.html">BROXEN.NET!! <span id="headerSubTitle">welcome to </span></a></h1>
+    </div>
+    
+    <div class="subHeader"><br></div>
+</div>
+
+    <div id="side-bar">
+        <div>
+<ul>
+<li><a href="../../../blogs/index.html">&rsaquo; blogs/</a></li>
+<li><a href="../../../graphicdesignismypassion/index.html">&rsaquo; graphicdesignismypassion/</a></li>
+<li><a href="../../../more.html">&rsaquo; more</a></li>
+<li><a href="../../index.html" class="thisPage">&raquo;<i> projects/</i></a></li>
+<li><ul>
+<li><a href="../index.html" class="thisPage">&raquo;<i> concepts/</i></a></li>
+<li><ul>
+<li><a href="index.html" class="thisPage">&raquo;<i> zaryx/</i></a></li>
+<li><ul>
+<li><a href="zaryx.html" class="thisPage">&raquo;<i> zaryx</i></a></li>
+<li><a href="zilchspace.html">&rsaquo; zilchspace</a></li>
+</ul></li>
+</ul></li>
+<li><a href="../../null.html">&rsaquo; null</a></li>
+<li><a href="../../swaydots.html">&rsaquo; swaydots</a></li>
+</ul></li>
+<li><a href="../../../random/index.html">&rsaquo; random/</a></li>
+<li><a href="../../../tech.html">&rsaquo; tech</a></li>
+<li><a href="../../../yume/index.html">&rsaquo; yume/</a></li>
+</ul>
+        </div>
+    </div>
+
+<div id="main-copy">
+
+
+<h1>\=-*<em>ZARYX LINUX</em>*/-=/</h1>
+
+<p>-/-welcome to the absolute.-/-
+zaryx linux is an independent, imperative-declarative source based x86_64 linux distribution meant for absolute near perfect control over the user's system. it mixes the extreme customization of exherbo linux, and mashes it together with a hjson config file for the entire system like nixos. powered all by paludis, zaryx strives to be the distro alone, between the sea of all the other ones. </p>
+
+<h1>-/-the national system packages station (nsps)-/-</h1>
+
+<p>nsps is a command line wrapper utility that brings in the imperative aspect of zaryx. for familiarity, it uses a pacman-like syntax (for example, nsps -S fastfetch) for things. when it installs something, it calls up paludis to install it, and if it goes through, it appends the package name into a [staged] packages section in the config which does NOT install it in rebuilds for more control and faster package selection, unless you use -S! which puts it into the regular packages section which DOES install it in rebuilds. nsps --blast opens all the .hjson configs one by one for manual configuration, usually for before a full rebuid. (more later on that.) for regular system checks, nsps --sync checks the entire config for any malformed or incorrect syntaxes or unfound packages.</p>
+
+<h1>-/-the config files-/-</h1>
+
+<p>Inside a system directories, the config files exist. They are set of .hjson files that dictate for zilchspace what partitions to make system packages, configs, directories or files to be backed up, and much more. hjson is picked instead of nix or scheme for familiarity, and simplicity. these consist of packages.hjson, partitions.hjson, backups.hjson, system.hjson, and the optional extracommands.hjson.</p>
+
+<h1>-/-the zilchspace-/-</h1>
+
+<p>the zilchspace is either a toolkit you can pull down from the official repos or website, or a set of tools in the zaryx iso for rebuilding with config.hjson. you can see more about zilchspace in it's own doc. after y/n confirmation before the rebuild, it checks for interet connection, if repo URLs are up, and correct config files syntax (nsps --sync). if it does not validate, it completely locks up. if it passes through, first, it treats the main partition as a product to finally be harvested, mounting your root filesystem, and bringing in config.hjson aswell as the kernel configs, any backup directories &amp; files listed in config.hjson like source caches or dotfiles, and paludis into the USB's actual storage to avoid memory loss. once these are collected, the main partition is ejected into the endless void, AKA nuked. it then starts rebuilding the system clean, one build and dep after another, melting hardware and taking up to hours. after the complete rebuild and reapplying backed up things, it cleans everything up, and it is ready for rebooting into the new system.</p>
+
+<h1>-what happens if rebuilding halts or fails?-</h1>
+
+<p>the user will have a complete logfile of the process, as well as the backed up files, toolchain, and everything, making it lead up to them for fixing. or they can fix and configure the config files backed up and redo the entire rebuild.</p>
+
+<h1>-/-what inspired zaryx?-/-</h1>
+
+<p>zaryx is mostly just a stupid hobby to see how pretentious but actually usable a distro can get. it combines the hell of exherbo, practicality, an imperative system, and a declarative system all in one. if it actually had a use, it would be for ultimate control over your system, tinkering, debugging, versatitily and taking linux to it's limits. it can be either minimal and strict with dwl, musl, and busybox, more on the practical side with glibc, coreutils, bash, and kde plasma, or something in the middle or entirely different, all still zaryx.</p>
+
+<h1>-/-conclusion-/-</h1>
+
+<p>zaryx linux is a imperative-declarative, sourcebased x86_64 linux distro for the tinkerers, the chads, and the curious. it can be big or small, light or heavy, speedy or slow, or all inbetween. coreutils and GNOME, or busybox and dwl. with easy to recognize &amp; edit config files, on demand installations or complete rebuilds, you can have it how you want it. </p>
+
+<p>welcome to the absolute.</p>
+
+
+</div>
+
+<div id="footer">
+<div class="left"><a href="http://werc.cat-v.org/">Powered by werc</a></div>
+</div>
+</body></html>
