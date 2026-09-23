@@ -1,23 +1,23 @@
 body, #header, #footer, #main-copy, #side-bar {
-    background-color: #000000;
-    color: #0038f2;
+    background-color: #090b12;
+    color: #9faccc;
 }
 
  {
-    color: #0018f2;
+    color: #9faccc;
     text-decoration: underline;
 }
 
 #header .midHeader {
-    background-color: #000000;
+    background-color: #090b12;
 }
 
 .headerTitle, .headerTitle a {
-    color: #0018f2;
+    color: #9faccc;
 }
 
 #headerSubTitle {
-    color: #0018f2;
+    color: #9faccc;
 }
 
 .superHeader, .subHeader {
@@ -25,7 +25,7 @@ body, #header, #footer, #main-copy, #side-bar {
 }
 
 #main-copy h1, #main-copy h2, #main-copy h3 {
-    color: #0018f2;
+    color: #9faccc;
     border-bottom: none;
 }
 
@@ -39,23 +39,22 @@ body, #header, #footer, #main-copy, #side-bar {
 }
 
 #side-bar a {
-    color: #0018f2;
+    color: #9faccc;
 }
 
 a:visited, a:link, a:hover, a:active {
-    color: #0018f2;
+    color: #9faccc;
 }
 
 * {
-    color: #0018f2;
+    color: #9faccc;
 }
 
 .thisPage {
-    color: #0018f2;
+    color: #9faccc;
 }
 
 .thisPage, .thisPage a {
-    color: #0038f2 !important;
-    background-color: #000536 !important;
+    color: #9faccc !important;
+    background-color: #9faccc !important;
 }
-
